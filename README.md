@@ -49,20 +49,20 @@ Recommended structure:
 
 As explained above, this container is configured to run your service(s) both in interactive and non-interactive modes.
   
-`docker run -it million12/centos-supervisor`: runs supervisord, then interactive bash shell and waits for user's input. Exiting from the shell kills the container.
+`docker run -it maszto/docker-centos-supervisor`: runs supervisord, then interactive bash shell and waits for user's input. Exiting from the shell kills the container.
 
-`docker run -it million12/centos-supervisor ps aux`:  runs supervisord, then `ps aux` command inside container and exists.
+`docker run -it maszto/docker-centos-supervisor ps aux`:  runs supervisord, then `ps aux` command inside container and exists.
 
-`docker run -it million12/centos-supervisor top`:  runs supervisord, then `top` tool. Exiting from top exits the container.
+`docker run -it maszto/docket-centos-supervisor top`:  runs supervisord, then `top` tool. Exiting from top exits the container.
 
-`docker run -d million12/centos-supervisor`: detached, runs supervisord in foreground mode and its configured services
+`docker run -d maszto/docker-centos-supervisor`: detached, runs supervisord in foreground mode and its configured services
 
-`docker run -d million12/centos-supervisor touch 'test-file'`: detached, runs `touch 'test-file'` command, then supervisord in foreground mode and its configured services
+`docker run -d maszto/docker-centos-supervisor touch 'test-file'`: detached, runs `touch 'test-file'` command, then supervisord in foreground mode and its configured services
 
 
 ## Build
 
-`docker build --tag=million12/centos-supervisor .`
+`docker build --tag=maszto/docker-centos-supervisor .`
 
 
 ## Author

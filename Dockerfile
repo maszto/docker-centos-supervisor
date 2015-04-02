@@ -8,6 +8,7 @@ RUN \
   yum update -y && \
   yum install -y epel-release && \
   yum install -y python-setuptools hostname inotify-tools && \
+  yum install -y tar bzip2 unzip wget git-core && \
   yum clean all && \
 
   easy_install supervisor
